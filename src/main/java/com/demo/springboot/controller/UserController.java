@@ -35,8 +35,6 @@ public class UserController {
      **/
     @RequestMapping(value = "selectAll")
     public Object selectAll() {
-        PageHelper.startPage(0, 15);
-        PageHelper.orderBy("uid DESC ");
             return userService.seleteAll();
     }
 

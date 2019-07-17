@@ -3,6 +3,7 @@ package com.demo.springboot.service.Impl;
 import com.demo.springboot.entity.User;
 import com.demo.springboot.mapper.UserMapper;
 import com.demo.springboot.service.UserService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ public class UserSeriviceIpml implements UserService {
     UserMapper userMapper;
     @Override
     public List<User> seleteAll() {
+        PageHelper.startPage(0, 2);
         return userMapper.selectAll();
     }
 
