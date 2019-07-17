@@ -1,0 +1,13 @@
+2019-07-12 11:35:25.560 DEBUG 7456 --- [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2019-07-12 11:35:25.562 DEBUG 7456 --- [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.demo.springboot'
+2019-07-12 11:35:25.571 DEBUG 7456 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\IdeaProjects\springboot\target\classes\com\demo\springboot\mapper\UserMapper.class]
+2019-07-12 11:35:25.572 DEBUG 7456 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.demo.springboot.mapper.UserMapper' mapperInterface
+2019-07-12 11:35:25.572 DEBUG 7456 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2019-07-12 11:35:26.029 DEBUG 7456 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'class path resource [config/sqlMapConfig.xml]'
+2019-07-12 11:35:26.074 DEBUG 7456 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\IdeaProjects\springboot\target\classes\mapper\UserMapper.xml]'
+2019-07-12 11:35:26.305 DEBUG 7456 --- [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-07-12 11:35:59.582 DEBUG 7456 --- [reactor-http-nio-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2019-07-12 11:35:59.585 DEBUG 7456 --- [reactor-http-nio-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dd8fcd7] was not registered for synchronization because synchronization is not active
+2019-07-12 11:35:59.591  WARN 7456 --- [reactor-http-nio-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-07-12 11:35:59.693 DEBUG 7456 --- [reactor-http-nio-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1412132969 wrapping com.mysql.cj.jdbc.ConnectionImpl@71121e78] will not be managed by Spring
+2019-07-12 11:35:59.718 DEBUG 7456 --- [reactor-http-nio-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dd8fcd7]
