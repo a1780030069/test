@@ -2,6 +2,7 @@ package com.demo.springboot.controller;
 
 import com.demo.springboot.entity.User;
 import com.demo.springboot.service.UserService;
+import com.demo.springboot.util.MapObjUtil;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,8 @@ public class UserController {
      * @Date 2019/6/19 19:44
      * @Description 查询所有用户
      **/
+
+//    @CrossOrigin(origins = "http://domain2.com", maxAge = 3600)
     @RequestMapping(value = "selectAll")
     public Object selectAll() {
             return userService.seleteAll();
@@ -67,7 +70,7 @@ public class UserController {
      * @Description 修改用户
      **/
     @RequestMapping(value = "updateUser")
-    public Object updateUser(@Valid @RequestBody User user) {
+    public Object updateUser(User user) {
         return userService.updateByPrimaryKeySelective(user);
     }
 
@@ -77,7 +80,7 @@ public class UserController {
      * @Description 用户登录
      **/
     @RequestMapping(value = "userLogin")
-    public Object userLogin(@Valid @RequestBody User user) {
+    public Object userLogin(@RequestBody User user) {
         return userService.updateByPrimaryKeySelective(user);
     }
 
